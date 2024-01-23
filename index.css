@@ -1,0 +1,115 @@
+body {
+  background: #7E65FE;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+.logo {
+  margin: 3em 0;
+  width: 100px;
+  height: 82px;
+  fill: #fff;
+}
+
+.feature {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.13;
+}
+
+.alert {
+  border-radius: 20px;
+  padding: 8px 6px;
+  background-color: rgba(255, 255, 255, 0.14);
+  display: inline;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+.coming-soon {
+  background-color: #FF4742;
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+
+h1, h2, h3 {
+  margin: 5% 0 3%;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+.phone-app {
+  transform: skewX(6deg);
+}
+
+input {
+  font-size: 16px;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+}
+
+input[type=submit i] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+}
+
+.phone-app img {
+  width: 70%;
+  position: relative;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .left {
+    position: relative;
+    padding-left: 4em;
+    max-width: 540px;
+  }
+  .left:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #7E65FE;
+    z-index: -1;
+  }
+
+  .right {
+    background-color: #fff;
+    width: 40%;
+    height: 100vh;
+    transform: skewX(-6deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -4vw;
+    position: relative;
+  }
+
+  .phone-app img {
+    left: -190px;
+  }
+}
